@@ -6,17 +6,10 @@ import {
   imageAssetQuery,
   slugWithTitleQuery,
 } from "@/src/api/sanityQueries";
-import { LANGS } from "@/src/types/langs";
 
-const getPage = async ({
-  slug,
-  lang,
-}: {
-  slug: string;
-  lang: LANGS;
-}): Promise<IPage> => {
+const getPage = async ({ slug }: { slug: string }): Promise<IPage> => {
   const page = await sanityClient.fetch(
-    `*[_type == $type && slug.current == $slug && language == $lang][0] {
+    `*[_type == $type && slug.current == $slug][0] {
       ...,
       seo {
         description,
@@ -123,7 +116,7 @@ const getPage = async ({
         },
       }
     }`,
-    { slug, type: MODELS.PAGE, lang },
+    { slug, type: MODELS.PAGE },
   );
 
   return page;

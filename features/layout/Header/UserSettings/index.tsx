@@ -3,7 +3,6 @@ import { useCommonComponentsContext } from "@/src/context/CommonComponentsContex
 
 export default function UserSettings() {
   const {
-    language,
     header: { userSettings, logout, webVersion },
   } = useCommonComponentsContext();
 
@@ -11,7 +10,7 @@ export default function UserSettings() {
     <div className="p-8">
       <div className="flex flex-col items-center gap-4 mb-8">
         {userSettings.map((page, index) => (
-          <InternalLink key={index} page={page} lang={language}>
+          <InternalLink key={index} page={page}>
             {page.title}
           </InternalLink>
         ))}

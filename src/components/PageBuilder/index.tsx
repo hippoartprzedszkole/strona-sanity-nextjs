@@ -13,12 +13,7 @@ export default async function PageBuilder({ page }: { page: IPage }) {
     // const withoutBg = [].some((item) => item === props._type);
 
     return (
-      <Component
-        key={props._key}
-        id={props._key}
-        lang={page.language}
-        {...props}
-      />
+      <Component key={props._key} id={props._key} {...props} />
     );
   });
 }

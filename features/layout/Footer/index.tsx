@@ -8,7 +8,6 @@ import InternalLink from "@/src/components/InternalLink";
 
 export default function Footer() {
   const {
-    language,
     footer: { links },
   } = useCommonComponentsContext();
   return (
@@ -28,7 +27,6 @@ export default function Footer() {
                     <InternalLink
                       key={index}
                       page={page}
-                      lang={language}
                       className="text-gray-500 hover:text-gray-700 text-sm"
                     >
                       {page.title}

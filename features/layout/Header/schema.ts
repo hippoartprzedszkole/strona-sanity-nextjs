@@ -13,14 +13,6 @@ export default defineType({
           name: "link",
           type: "reference",
           to: [{ type: MODELS.PAGE }],
-          options: {
-            filter: ({ document }) => {
-              return {
-                filter: "language == $lang",
-                params: { lang: document.language },
-              };
-            },
-          },
         }),
       ],
     }),
@@ -32,14 +24,6 @@ export default defineType({
           name: "link",
           type: "reference",
           to: [{ type: MODELS.PAGE }],
-          options: {
-            filter: ({ document }) => {
-              return {
-                filter: "language == $lang",
-                params: { lang: document.language },
-              };
-            },
-          },
         }),
       ],
     }),

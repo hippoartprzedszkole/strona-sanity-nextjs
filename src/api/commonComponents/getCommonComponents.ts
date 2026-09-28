@@ -1,16 +1,11 @@
 import { MODELS } from "@/src/types/schemas";
 import { sanityClient } from "@/sanity/lib/client";
 import { slugWithTitleQuery } from "@/src/api/sanityQueries";
-import { LANGS } from "@/src/types/langs";
 import { ICommonComponents } from "@/src/types/common";
 
-const getCommonComponents = async ({
-  lang,
-}: {
-  lang: LANGS;
-}): Promise<ICommonComponents> => {
+const getCommonComponents = async (): Promise<ICommonComponents> => {
   const commonComponents = await sanityClient.fetch(
-    `*[_type == $type && language == $lang][0] {
+    `*[_type == $type][0] {
       ...,
       header {
         ...,
@@ -30,7 +25,7 @@ const getCommonComponents = async ({
         }
       }
     }`,
-    { type: MODELS.COMMON_COMPONENTS, lang },
+    { type: MODELS.COMMON_COMPONENTS },
   );
 
   return commonComponents;

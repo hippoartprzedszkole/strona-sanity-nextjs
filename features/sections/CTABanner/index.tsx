@@ -2,7 +2,6 @@ import { ICTABanner } from "./types";
 import SectionHeading from "@/src/components/SectionHeading";
 import Image from "@/src/components/Image";
 import SectionPaddingWrapper from "@/src/components/SectionPaddingWrapper";
-import { LANGS } from "@/src/types/langs";
 import Link from "next/link";
 
 export default async function CTABanner({
@@ -15,7 +14,7 @@ export default async function CTABanner({
   googlePlayLink,
   googlePlayImg,
   googlePlayQR,
-}: ICTABanner & { lang: LANGS }) {
+}: ICTABanner) {
   return (
     <SectionPaddingWrapper>
       <div className="w-full relative flex text-white">

@@ -1,5 +1,4 @@
 import { type SchemaTypeDefinition } from "sanity";
-import { withLanguage } from "@/src/utils/withLanguage";
 
 import richText from "@/src/partials/richText";
 import img from "@/src/partials/img";
@@ -12,7 +11,7 @@ import footer from "@/features/layout/Footer/schema";
 
 import ctaBanner from "@/features/sections/CTABanner/schema";
 
-const models = [withLanguage(page), withLanguage(commonComponentsSchema)];
+const models = [page, commonComponentsSchema];
 
 const partials = [richText, img];
 

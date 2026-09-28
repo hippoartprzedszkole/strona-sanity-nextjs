@@ -1,6 +1,5 @@
 import { Slug } from "sanity";
 import { SECTION_NAMES } from "@/features/sections";
-import { LANGS } from "./langs";
 
 export interface ISeo {
   description?: string;
@@ -16,5 +15,4 @@ export interface IPage {
     _type: SECTION_NAMES;
     _key: string;
   }[];
-  language: LANGS;
 }
