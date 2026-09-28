@@ -44,9 +44,8 @@
     rgba(247, 110, 25, 0.31) 100%
   );
   --shadow-box: 1rem 1rem 2rem 1rem rgba(247, 110, 25, 0.08);
-  --font-primary: "Playfair Display";
-  --font-secondary: "Poppins";
-  --font-tertiary: "Montserrat";
+  --font-heading: var(--font-fredoka);
+  --font-body: var(--font-outfit);
 }
 
 html {
@@ -57,7 +56,7 @@ html {
 }
 
 body {
-  font-family: var(--font-secondary);
+  font-family: var(--font-body);
   background: var(--background);
   color: var(--foreground);
 }

@@ -1,25 +1,19 @@
 import "./globals.css";
 import Layout from "@/features/layout/Layout";
 import getCommonComponents from "@/src/api/commonComponents/getCommonComponents";
-import { Poppins, Montserrat, Playfair_Display } from "next/font/google";
+import { Fredoka, Outfit } from "next/font/google";
 import clsx from "clsx";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Metadata } from "next";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const fredoka = Fredoka({
+  variable: "--font-fredoka",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const playfairDisplay = Playfair_Display({
-  variable: "--font-playfair-display",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
@@ -122,12 +116,7 @@ export default async function RootLayout({
         />
       </head>
       <body
-        className={clsx(
-          poppins.variable,
-          montserrat.variable,
-          playfairDisplay.variable,
-          "antialiased",
-        )}
+        className={clsx(fredoka.variable, outfit.variable, "antialiased")}
       >
         <Layout commonComponents={commonComponents}>{children}</Layout>
         {gaId && <GoogleAnalytics gaId={gaId} />}
