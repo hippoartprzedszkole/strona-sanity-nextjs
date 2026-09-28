@@ -24,19 +24,20 @@ export default function Footer() {
                 />
               </div>
 
-              <div className="flex-1 flex flex-col items-center gap-2">
+              <div className="flex-1 flex flex-col items-center">
                 {copyrightText && <Text18>{copyrightText}</Text18>}
-                <div className="gap-2 flex flex-wrap">
-                  {links.map((page, index) => (
-                    <InternalLink
-                      key={index}
-                      page={page}
-                      className="text-gray-500 hover:text-gray-700 text-sm"
-                    >
-                      {page.title}
-                    </InternalLink>
-                  ))}
-                </div>
+              </div>
+
+              <div className="flex-1 flex flex-wrap gap-2 justify-center md:justify-end">
+                {links.map((page, index) => (
+                  <InternalLink
+                    key={index}
+                    page={page}
+                    className="text-gray-500 hover:text-gray-700 text-sm"
+                  >
+                    {page.title}
+                  </InternalLink>
+                ))}
               </div>
             </div>
           </div>
