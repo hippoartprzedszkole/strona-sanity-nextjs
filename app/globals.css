@@ -13,24 +13,30 @@
 } */
 
 @theme inline {
+  /* Główne kolory akcentowe */
+  --color-pink: #d94186; /* Różowy (logo, serca, nagłówki)[cite: 1] */
+  --color-yellow: #feba1a; /* Żółty (logo, tła, gwiazdki)[cite: 1] */
+  --color-green: #38b14e; /* Zielony (przyciski, ikony)[cite: 1] */
+  --color-blue: #0271bf; /* Ciemny niebieski (przyciski akcji)[cite: 1] */
+  --color-teal: #00888c; /* Morski / turkusowy (ikona języków)[cite: 1] */
+  --color-purple: #835293; /* Fioletowy (ikony wsparcia)[cite: 1] */
+  --color-orange: #f47d2d; /* Pomarańczowy (ikony, zegary)[cite: 1] */
+  --color-red: #ea4f3c; /* Czerwony (akcenty, ikony)[cite: 1] */
+
+  /* Kolory tła i konturów */
+  --color-cream: #faf7f1; /* Główne kremowe tło strony[cite: 1] */
+  --color-cream-dark: #f3f0e7; /* Ciemniejszy krem (sekcje, stopka)[cite: 1] */
+  --color-white: #ffffff; /* Czysta biel[cite: 1] */
+  --color-gray-light: #e8e4db; /* Szary (obramowania, linie podziału)[cite: 1] */
+
+  /* Kolory tekstu */
+  --color-text: #333333; /* Główny tekst[cite: 1] */
+  --color-text-dark: #212427; /* Ciemny tekst (nagłówki)[cite: 1] */
+  --color-gray: #808080; /* Szary tekst i pomocnicze ikony[cite: 1] */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-green: #57c850;
-  --color-yellow: #febf20;
-  --color-red: #ff757f;
-  --color-blue: #007aff;
-  --color-cream: #faf9fa;
-  --color-orange: #f76e19;
-  --color-text: #212427;
-  --color-orange-bright: #d48a38;
-  --color-cream-light: #f3f2ec;
-  --color-gray-light: #ada4a5;
-  --color-gray-footer: #f3f2ec;
-  --color-white: #faf9fa;
-  --color-black: #212427;
-  --color-gray: #cec9c9;
   --gradient-main: linear-gradient(
     43deg,
     #fff 0%,
