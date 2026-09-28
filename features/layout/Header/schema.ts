@@ -16,24 +16,5 @@ export default defineType({
         }),
       ],
     }),
-    defineField({
-      name: "userSettings",
-      type: "array",
-      of: [
-        defineArrayMember({
-          name: "link",
-          type: "reference",
-          to: [{ type: MODELS.PAGE }],
-        }),
-      ],
-    }),
-    defineField({
-      name: "logout",
-      type: "string",
-    }),
-    defineField({
-      name: "webVersion",
-      type: "string",
-    }),
   ],
 });

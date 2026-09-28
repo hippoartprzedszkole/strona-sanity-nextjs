@@ -6,6 +6,21 @@ export default defineType({
   type: "document",
   fields: [
     defineField({
+      name: "copyrightText",
+      title: "Copyright text",
+      type: "string",
+    }),
+    defineField({
+      name: "instagramUrl",
+      title: "Instagram URL",
+      type: "url",
+    }),
+    defineField({
+      name: "facebookUrl",
+      title: "Facebook URL",
+      type: "url",
+    }),
+    defineField({
       name: "links",
       type: "array",
       of: [

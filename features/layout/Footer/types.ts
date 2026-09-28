@@ -4,4 +4,7 @@ type PageType = Pick<IPage, "slug" | "title">[];
 
 export interface IFooter {
   links: PageType;
+  copyrightText?: string;
+  instagramUrl?: string;
+  facebookUrl?: string;
 }

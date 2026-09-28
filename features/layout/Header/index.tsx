@@ -8,12 +8,9 @@ import clsx from "clsx";
 import SectionPaddingWrapper from "@/src/components/SectionPaddingWrapper";
 import { useParams } from "next/navigation";
 import OpenSidebarModal from "@/src/components/OpenSidebarModal";
-import UserSettings from "./UserSettings";
 import Menu from "./Menu";
 import { useEffect, useState } from "react";
 import { useScrollbarContext } from "@/src/context/ScrollbarContext";
-import CloseSvg from "@/src/assets/CloseSvg";
-import UserSvg from "@/src/assets/UserSvg";
 
 const Header = () => {
   const { slug } = useParams();
@@ -22,7 +19,6 @@ const Header = () => {
   const { scrolled } = useScrollPosition();
   const iconSize = "35px";
 
-  const [userSettingsOpen, setUserSettingsOpen] = useState<boolean>(false);
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const { showScrollbar, hideScrollbar } = useScrollbarContext();
 
@@ -31,7 +27,7 @@ const Header = () => {
     : "1rem 1rem 1rem 15px rgba(247, 110, 25, 0.2)";
 
   let bgColor;
-  if (userSettingsOpen || isMenuOpen || !slug) {
+  if (isMenuOpen || !slug) {
     bgColor = "transparent";
     shadow = "initial";
   } else {
@@ -39,7 +35,6 @@ const Header = () => {
   }
 
   const closeSidebars = () => {
-    setUserSettingsOpen(false);
     setIsMenuOpen(false);
   };
 
@@ -48,12 +43,12 @@ const Header = () => {
   }, [slug]);
 
   useEffect(() => {
-    if (userSettingsOpen || isMenuOpen) {
+    if (isMenuOpen) {
       hideScrollbar();
     } else {
       showScrollbar();
     }
-  }, [userSettingsOpen, isMenuOpen]);
+  }, [isMenuOpen]);
 
   return (
     <>
@@ -100,23 +95,6 @@ const Header = () => {
                   </div>
                 </Link>
               )}
-              <div
-                className={`
-                cursor-pointer 
-                w-[${iconSize}] 
-                h-[${iconSize}]
-                object-cover
-              `}
-                onClick={() =>
-                  setUserSettingsOpen((userSettingsOpen) => !userSettingsOpen)
-                }
-              >
-                {userSettingsOpen ? (
-                  <CloseSvg color="var(--color-green)" />
-                ) : (
-                  <UserSvg color="var(--color-green)" />
-                )}
-              </div>
             </div>
           </div>
         </SectionPaddingWrapper>
@@ -127,13 +105,6 @@ const Header = () => {
         closeSidebar={closeSidebars}
       >
         <Menu />
-      </OpenSidebarModal>
-      <OpenSidebarModal
-        side="right"
-        isOpen={userSettingsOpen}
-        closeSidebar={closeSidebars}
-      >
-        <UserSettings />
       </OpenSidebarModal>
     </>
   );

@@ -11,12 +11,7 @@ const getCommonComponents = async (): Promise<ICommonComponents | null> => {
         ...,
         menu[]-> {
           ${slugWithTitleQuery}
-        },
-        userSettings[]-> {
-          ${slugWithTitleQuery}
-        },
-        logout,
-        webVersion
+        }
       },
       footer {
         ...,
