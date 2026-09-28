@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --background: var(--color-white);
+  --foreground: #171717;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-green: #57c850;
+  --color-yellow: #febf20;
+  --color-red: #ff757f;
+  --color-blue: #007aff;
+  --color-cream: #faf9fa;
+  --color-orange: #f76e19;
+  --color-text: #212427;
+  --color-orange-bright: #d48a38;
+  --color-cream-light: #f3f2ec;
+  --color-gray-light: #ada4a5;
+  --color-gray-footer: #f3f2ec;
+  --color-white: #faf9fa;
+  --color-black: #212427;
+  --color-gray: #cec9c9;
+  --gradient-main: linear-gradient(
+    43deg,
+    #fff 0%,
+    rgba(111, 157, 34, 0.31) 46%,
+    rgba(247, 110, 25, 0.31) 100%
+  );
+  --shadow-box: 1rem 1rem 2rem 1rem rgba(247, 110, 25, 0.08);
+  --font-primary: "Playfair Display";
+  --font-secondary: "Poppins";
+  --font-tertiary: "Montserrat";
+}
+
+html {
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  font-family: var(--font-secondary);
+  background: var(--background);
+  color: var(--foreground);
+}

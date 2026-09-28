@@ -1,0 +1,1049 @@
+{
+  "pages": [
+    {
+      "_createdAt": "2026-04-30T12:06:57Z",
+      "_id": "be6d9788-d023-46d4-83ef-1b516efce555",
+      "_rev": "ekJ8SOP4J2b5S9xA6XA4tq",
+      "_system": {
+        "base": {
+          "id": "be6d9788-d023-46d4-83ef-1b516efce555",
+          "rev": "wy0Xw1NMirP6FBgzZ5UyEb"
+        }
+      },
+      "_type": "page",
+      "_updatedAt": "2026-05-30T15:06:19Z",
+      "language": "pl",
+      "sections": [
+        {
+          "_key": "b2c-hero-pl",
+          "_type": "headingSection",
+          "badge": {
+            "href": "#price-list",
+            "label": "za darmo przez 14 dni",
+            "preLabel": "Wypróbuj"
+          },
+          "eyebrow": "Zamień kuchenny chaos w prosty plan: szybciej, taniej, zdrowiej i bez marnowania jedzenia.",
+          "mockupVideo": {
+            "_type": "file",
+            "asset": {
+              "_ref": "file-26464c2f2fa4156062a5f6afadb05e40bfc02e0d-mov",
+              "_type": "reference"
+            }
+          },
+          "secondaryCta": {
+            "href": "#features",
+            "label": "jak to działa?"
+          },
+          "title": "Wygeneruj tygodniowy jadłospis w 30 sekund i nigdy więcej nie stój przy lodówce pytając 'co na obiad?'"
+        },
+        {
+          "_key": "b2c-pain-tiles-pl",
+          "_type": "threeTilesSection",
+          "tiles": [
+            {
+              "_key": "b2c-pain-1-pl",
+              "description": "Zaczynasz z entuzjazmem. Wpisujesz poniedziałek. We wtorek zapominasz. W piątek odinstalowujesz. Kilka miesięcy później historia się powtarza.",
+              "icon": {
+                "_type": "img",
+                "alt": "clock icon",
+                "asset": {
+                  "_ref": "image-12a68583985714864baaf137474899951756a812-196x148-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "Masz już 3 aplikacje do jedzenia. Żadnej nie używasz od tygodni."
+            },
+            {
+              "_key": "b2c-pain-2-pl",
+              "description": "To nie kwestia siły woli. Problem jest prostszy: nie masz gotowego planu CO ugotować w środę o 17:30 po ciężkim dniu. Bez planu zawsze wygra łatwiejsza opcja.",
+              "icon": {
+                "_type": "img",
+                "alt": "money icon",
+                "asset": {
+                  "_ref": "image-8b994d30a45be2f72df596f87a0dd651e5e15f42-175x144-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "Co niedziela: 'od poniedziałku jadam lepiej'.\nW środę znowu pizza."
+            },
+            {
+              "_key": "b2c-pain-3-pl",
+              "description": "Kupujesz z dobrymi intencjami. Ale bez planu połowa lodówki ląduje w koszu. Albo wracasz do sklepu codziennie po 'to jedno brakujące' i za każdym razem wychodzisz z pełną torbą.",
+              "icon": {
+                "_type": "img",
+                "alt": "motivation icon",
+                "asset": {
+                  "_ref": "image-aff27ae0c28bd14a47d33c32b92ed7165ed8274d-150x138-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "Wyrzucasz kilkaset złotych tygodniowo na jedzenie i sam/a nie wiesz jak."
+            }
+          ],
+          "title": "Powiedz, czy to brzmi znajomo?"
+        },
+        {
+          "_key": "b2c-story-pl",
+          "_type": "richTextSection",
+          "text": [
+            {
+              "_key": "s01",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "s01s",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Skąd wiem jak to u Ciebie wygląda?"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "s02",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "s02s",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Jacek i Monika, 2021 rok. Oboje nauczyciele w trakcie przebranżowienia, pierwsze dziecko właśnie przyszło na świat, nie ma na nic czasu. I nagle ta nieprzyjemna matematyka: co tydzień idzie na jedzenie więcej niż powinno."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "s03",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "s03s",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Nie dlatego, że jedli w restauracjach. Nie dlatego, że kupowali drogie produkty."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "s04",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "s04s",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Dlatego, że kupowali bez planu. Wychodzili po jajka i wracali z pełną torbą. Wyrzucali połowę lodówki w niedzielę bo 'jakoś nie zdążyli'."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "s05",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "s05s",
+                  "_type": "span",
+                  "marks": ["strong"],
+                  "text": "Największy wyciek pieniędzy? Jedzenie."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "s06",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "s06s",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Postanowili to zmienić. Zaczęli planować posiłki na kartce A4. Ręcznie. Tydzień po tygodniu."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "s07",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "s07s",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "I wiecie co? Działało. Jedzenie było zdrowsze. Pieniędzy szło mniej. Zakupy raz w tygodniu."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "s08",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "s08s",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Ale był jeden problem: samo planowanie zajmowało godziny. Wciąż te same 5 dań bo brakowało pomysłów. I tak wracali do sklepu po to jedno brakujące jajko."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "s09",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "s09s",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Zamiast zrezygnować z planowania, zautomatyzowali je."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "s10",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "s10s",
+                  "_type": "span",
+                  "marks": ["strong"],
+                  "text": "Tak powstało Shoppin'go – aplikacja, którą sami chcieli mieć."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "s11",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "s11s",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Teraz rozumiesz już dlaczego poprzednie aplikacje u Ciebie nie zadziałały?"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "s12",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "s12s",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Większość aplikacji do jedzenia daje Ci narzędzia do śledzenia tego co już zjadłeś. Kaloryczność, makro, dziennik posiłków."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "s13",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "s13s",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "To jest jak lusterko wsteczne. Widzisz gdzie byłeś, ale nie wiesz dokąd jechać."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "s14",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "s14s",
+                  "_type": "span",
+                  "marks": ["strong"],
+                  "text": "Shoppin'go planuje to co zjesz. Nie śledzi tego co zjadłeś."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "s15",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "s15s",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "I to jest fundamentalna różnica, przez którą poprzednie aplikacje nie działały – nie dlatego że byłeś za mało zdeterminowany."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            }
+          ]
+        },
+        {
+          "_key": "b2c-bullets-pl",
+          "_type": "bulletPointSection",
+          "body": "Inne aplikacje dawały Ci tabelki do wypełniania. Shoppin'go daje Ci gotowy plan. To jedyna aplikacja, która łączy planowanie posiłków AI z automatyczną listą zakupów. 5 minut w niedzielę – spokój na cały tydzień.",
+          "bullets": [
+            {
+              "_key": "b2c-b1-pl",
+              "description": [
+                {
+                  "_key": "b2c-b1d",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "03f5c46079ac",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Zapomnij o codziennym „co dziś na obiad?”. Shoppingo tworzy dla Ciebie spersonalizowane jadłospisy na 7 dni – dopasowane do Twoich celów, preferencji i stylu życia. Możesz edytować co chcesz albo użyć tak jak jest."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "img": {
+                "_type": "img",
+                "alt": "meal icon",
+                "asset": {
+                  "_ref": "image-14379904e4a5994bef264d4ab2af30fc719ee7d0-130x110-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "Plan posiłków na cały tydzień – w 30 sekund"
+            },
+            {
+              "_key": "b2c-b2-pl",
+              "description": [
+                {
+                  "_key": "7f6e372ecba6",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "3748a98da648",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Na podstawie Twojego planu posiłków Shoppin’go automatycznie generuje listę zakupów ułożoną według kategorii i z podsumowaniem wydatków."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "img": {
+                "_type": "img",
+                "alt": "meal icon",
+                "asset": {
+                  "_ref": "image-ea213f458c01ed2c777527acd1c91a663a516f21-130x108-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "Gotowa lista zakupów"
+            },
+            {
+              "_key": "b2c-b3-pl",
+              "description": [
+                {
+                  "_key": "b2c-b3d",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "b2c-b3ds",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Wartości odżywcze każdego posiłku są widoczne automatycznie. Chcesz więcej białka? Zmień jedno danie. Aplikacja przeliczy resztę."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "img": {
+                "_type": "img",
+                "alt": "meal icon",
+                "asset": {
+                  "_ref": "image-10bb0ef747e9962354b40c84d482ff70763adaa4-130x101-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "Widzisz co jesz – bez ręcznego wpisywania"
+            },
+            {
+              "_key": "b2c-b4-pl",
+              "description": [
+                {
+                  "_key": "2027ca99de4d",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "7ce0f9264192",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Dodaj swoich bliskich do konta i stwórzcie jedną listę zakupów, jedno wyjście na zakupy. Koniec z pytaniami „a kupiłeś mleko?” i wieczornym narzekaniem „co wy w ogóle chcecie na kolację?"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "img": {
+                "_type": "img",
+                "alt": "meal icon",
+                "asset": {
+                  "_ref": "image-b031b0e05b52bf1b0ef1fa73852342f0e7e90227-130x105-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "Cała rodzina w jednym planie."
+            },
+            {
+              "_key": "ea3c2d50af9483cb549d27de52673383",
+              "description": [
+                {
+                  "_key": "2e3d15596389",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "6e874ecfe8a1",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Dzięki szybkiej liście nie zapomnisz o niczym."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "img": {
+                "_type": "img",
+                "alt": "meal icon",
+                "asset": {
+                  "_ref": "image-c5ff22e2f95c447aa81060eeed9347b65686a8d8-129x106-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "Brakuje masła ? Dopisz je do listy zakupów!"
+            },
+            {
+              "_key": "bb08c42416e6d0228879d066d136316b",
+              "description": [
+                {
+                  "_key": "fe9ab897a2a4",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "ec50490ca827",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Znalazłeś coś pysznego w internecie? Wklej link i gotowe. Masz ulubiony przepis babci? Dodaj go do bazy swoich przepisów i uwzględniaj w planie posiłków na cały tydzień!"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "img": {
+                "_type": "img",
+                "alt": "meal icon",
+                "asset": {
+                  "_ref": "image-f53863513d968584c5836f9b1390afc05bff5125-130x87-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "Twoje przepisy, Twoje zasady."
+            },
+            {
+              "_key": "b2c-b5-pl",
+              "description": [
+                {
+                  "_key": "b2c-b5d",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "b2c-b5ds",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Planujesz → kupujesz dokładnie to co trzeba → nie wyrzucasz. Żadnych impulsywnych zakupów przy kasie. Żadnych brakujących produktów w połowie gotowania."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "img": {
+                "_type": "img",
+                "alt": "meal icon",
+                "asset": {
+                  "_ref": "image-77a72e0d259828501331bdb788ded59a3bfbaf78-130x106-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "Realne oszczędności od pierwszego tygodnia"
+            },
+            {
+              "_key": "23d2c0e5b9c52862408ae0a7c55368c6",
+              "description": [
+                {
+                  "_key": "b72b4f0e1812",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "52359075d18d",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Koniec z krążeniem po sklepie bez planu – wchodzisz, bierzesz to co potrzebne, wychodzisz."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "img": {
+                "_type": "img",
+                "alt": "meal icon",
+                "asset": {
+                  "_ref": "image-ea213f458c01ed2c777527acd1c91a663a516f21-130x108-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "Zakupy na tydzień w pół godziny"
+            }
+          ],
+          "mainImage": {
+            "_type": "img",
+            "asset": {
+              "_ref": "image-de287deb507beb36df142a8bf0d7a258d5f570a0-1024x1024-png",
+              "_type": "reference"
+            }
+          },
+          "subtitle": "Użytkownicy Shoppin'go oszczędzają średnio 200–300 zł tygodniowo na jedzeniu.",
+          "title": "Shoppin'go to nie kolejna aplikacja do śledzenia kalorii"
+        },
+        {
+          "_key": "b2c-how-it-works-pl",
+          "_type": "sliderSection",
+          "slides": [
+            {
+              "_key": "b2c-slide-1-pl",
+              "description": [
+                {
+                  "_key": "348b1dc20c49",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "d29c57f4e0d3",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Napisz co lubisz, czego unikasz i na jaką kuchnię masz ochotę w tym tygodniu. Określ liczbę posiłków i kaloryczność jeśli chcesz– aplikacja zrobi resztę."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "img": {
+                "_type": "img",
+                "asset": {
+                  "_ref": "image-f4a1a640cd4524ab872c0b2dbfc9bd02ccac1d7c-800x1741-gif",
+                  "_type": "reference"
+                }
+              },
+              "title": "Opisz co lubisz jeść"
+            },
+            {
+              "_key": "b2c-slide-2-pl",
+              "description": [
+                {
+                  "_key": "09e14d74482a",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "68ea0dd3b7a4",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Na podstawie Twoich preferencji aplikacja tworzy spersonalizowany plan posiłków na cały tydzień. Nie pasuje Ci jakiś przepis? Zmień go jednym kliknięciem."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "img": {
+                "_type": "img",
+                "asset": {
+                  "_ref": "image-ea970ed5d374fd45b0f698eb509e07c11f8f06be-800x1741-gif",
+                  "_type": "reference"
+                }
+              },
+              "title": "Twój idealny tydzień jedzenia w kilka sekund"
+            },
+            {
+              "_key": "b2c-slide-3-pl",
+              "description": [
+                {
+                  "_key": "b36ed260894c",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "6a1ffdcdd4fc",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Aplikacja automatycznie generuje interaktywną listę zakupów posortowaną według kategorii sklepowych – z orientacyjnym kosztem całości. Wchodzisz, kupujesz, wychodzisz."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "img": {
+                "_type": "img",
+                "asset": {
+                  "_ref": "image-af83f45ee65405a68cf72d8e3836dada5600c9f8-800x1741-gif",
+                  "_type": "reference"
+                }
+              },
+              "title": "Koniec z chaosem w sklepie"
+            },
+            {
+              "_key": "b2c-slide-4-pl",
+              "description": [
+                {
+                  "_key": "e5ed822634f0",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "35de85b9cf9d",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Koniec jedzenia byle czego na szybko, bez dokupowania \"jednej rzeczy\" codziennie."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "img": {
+                "_type": "img",
+                "asset": {
+                  "_ref": "image-37e78786620557cdca6d2213401f8bd532a1627c-800x1741-gif",
+                  "_type": "reference"
+                }
+              },
+              "title": "Gotuj z planem i lepiej się odżywiaj"
+            },
+            {
+              "_key": "69b2a1c72169bb2f5cd393b92a391d86",
+              "description": [
+                {
+                  "_key": "6d5d8c8853a4",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "4827973e97c6",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Podaj swoje alergie i preferencje dietetyczne – aplikacja zapamięta je na stałe i będzie je uwzględniać przy każdym generowaniu planu."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "img": {
+                "_type": "img",
+                "asset": {
+                  "_ref": "image-d15c9dccfefa48caee19de096df25c4d953e5f13-1206x2622-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "Ustaw raz, korzystaj zawsze"
+            },
+            {
+              "_key": "603284c60d7c6bac35ab0b2d5a53d810",
+              "description": [
+                {
+                  "_key": "b95a6e9183b2",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "3e6740e975ba",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Dodaj bliskich do swojego planu, dostosuj porcje do liczby domowników. Mozesz bez obaw wysłac kogoś z domowników na zakupy z gotową listą. Zero wymówek, że \"nie wiedział co kupić\"."
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "img": {
+                "_type": "img",
+                "asset": {
+                  "_ref": "image-389793adc76f5a85306fc4b80922d3280e7c64c9-1206x2622-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "Gotuj dla całej rodziny bez nerwów"
+            },
+            {
+              "_key": "f3790b3b92a402bc8e431f94807456cf",
+              "description": [
+                {
+                  "_key": "2273cecd96d7",
+                  "_type": "block",
+                  "children": [
+                    {
+                      "_key": "f4ffb3a5ac66",
+                      "_type": "span",
+                      "marks": [],
+                      "text": "Przeglądaj tygodniowe plany innych użytkowników, korzystaj z ulubionych przepisów i dziel się swoimi pomysłami"
+                    }
+                  ],
+                  "markDefs": [],
+                  "style": "normal"
+                }
+              ],
+              "img": {
+                "_type": "img",
+                "asset": {
+                  "_ref": "image-2079a5cabff21f11387b085123acdcdbe4145ef1-1206x2622-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "Wymieniaj się pomysłami ze społecznością"
+            }
+          ]
+        },
+        {
+          "_key": "b2c-testimonials-pl",
+          "_type": "testimonialsSection",
+          "badge": {
+            "href": "#price-list",
+            "label": "Zacznij za darmo",
+            "preLabel": "14 dni"
+          },
+          "mainImage": {
+            "_type": "img",
+            "alt": "happy users img",
+            "asset": {
+              "_ref": "image-368151736e40457898cd34361c65ad608464c5f7-630x415-png",
+              "_type": "reference"
+            }
+          },
+          "primaryCta": {
+            "href": "#price-list",
+            "label": "wypróbuj za darmo 14 dni"
+          },
+          "secondaryCta": {
+            "href": "#features",
+            "label": "jak to działa?"
+          },
+          "testimonials": [
+            {
+              "_key": "b2c-t1-pl",
+              "authorName": "Tomasz",
+              "authorRole": "dietetyk sportowy",
+              "avatar": {
+                "_type": "img",
+                "asset": {
+                  "_ref": "image-e9e6ed8478be9962d10a801edfa7c399a6b73abd-108x119-png",
+                  "_type": "reference"
+                }
+              },
+              "description": "Przez lata widziałem ten sam schemat — daję pacjentowi plan, a on wraca za tydzień z połową zrealizowanego. Nie dlatego, że mu się nie chciało. Dlatego, że nie wiedział co kupić i ile. Shoppin'go rozwiązuje ten problem automatycznie — plan zamienia się w konkretną listę z ilościami. To brzmi prosto, ale w praktyce zmienia wszystko.",
+              "quote": "Między jadłospisem a efektem zawsze była jedna przeszkoda: zakupy",
+              "rating": 5
+            },
+            {
+              "_key": "b2c-t2-pl",
+              "authorName": "Karolina",
+              "authorRole": "dietetyczka i autorka bloga o żywieniu",
+              "avatar": {
+                "_type": "img",
+                "asset": {
+                  "_ref": "image-be4042ef7c019e311c77f0711020bbd9a0ea8d44-90x119-png",
+                  "_type": "reference"
+                }
+              },
+              "description": "Kiedy ktoś pyta mnie „od czego zacząć\", zawsze mówię to samo: nie musisz wiedzieć wszystkiego o makrach — musisz przestać kupować bez planu. Shoppin'go to pierwsza aplikacja, którą mogę polecić bez zastrzeżeń. Nie przytłacza wykresami, nie wymaga wiedzy żywieniowej. Generujesz plan, dostajesz listę zakupów, idziesz do sklepu. Zdrowe jedzenie zaczyna się od dobrego zakupu.",
+              "quote": "Polecam ją znajomym, którzy pytają mnie jak zacząć jeść zdrowiej bez wydawania na dietetyka",
+              "rating": 5
+            },
+            {
+              "_key": "b2c-t3-pl",
+              "authorName": "Marcin",
+              "authorRole": "dietetyk",
+              "avatar": {
+                "_type": "img",
+                "asset": {
+                  "_ref": "image-083a5487eecee6520d834f0d5a3362567de6c929-90x119-png",
+                  "_type": "reference"
+                }
+              },
+              "description": "Większość problemów żywieniowych, z którymi przychodzą do mnie ludzie, nie wynika z braku wiedzy — wynika z braku planu. Shoppin'go daje ten plan od razu, bez specjalisty. Ale co mi się w tym najbardziej podoba jako dietetykowi — jeśli ktoś chce pójść dalej, schudnąć, poprawić wyniki badań, zadbać o konkretny cel zdrowotny — może zaprosić mnie do swojej aplikacji jednym tapnięciem. Mam dostęp do jego profilu, preferencji, historii planów. I mogę to wszystko dopasować do jego rzeczywistej sytuacji.",
+              "quote": "Zacznij sam — a gdy będziesz gotowy, ekspert dopasuje resztę do Ciebie",
+              "rating": 5
+            }
+          ],
+          "title": "Co dietetycy mówią o planowaniu jedzenia z Shoppin'go"
+        },
+        {
+          "_key": "b2c-transform-tiles-pl",
+          "_type": "threeTilesSection",
+          "bgColor": "#46bf4d",
+          "tiles": [
+            {
+              "_key": "b2c-tr-1-pl",
+              "description": "Masz plan przed oczami na cały tydzień. Każdy dzień, każdy posiłek. Nie zastanawiasz się – po prostu gotujesz.",
+              "icon": {
+                "_type": "img",
+                "alt": "clock icon",
+                "asset": {
+                  "_ref": "image-be4b0f35a3c7e0d3c3f62da21c017b479a13440e-512x512-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "Koniec z pytaniem\n'co na obiad?'"
+            },
+            {
+              "_key": "b2c-tr-2-pl",
+              "description": "Jedna lista, jeden wyjazd. Koniec z codziennym 'wyrwem' do sklepu po brakujące produkty, które zawsze kosztuje więcej niż planowałeś.",
+              "icon": {
+                "_type": "img",
+                "alt": "money icon",
+                "asset": {
+                  "_ref": "image-5a1d0544663f943fa189eba48d84ce999e99ff83-512x512-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "Zakupy raz w tygodniu.\nNie codziennie."
+            },
+            {
+              "_key": "b2c-tr-3-pl",
+              "description": "Kupujesz dokładnie to co trzeba. Nic nie ląduje w koszu. Rachunki w sklepie przestają być niespodzianką.",
+              "icon": {
+                "_type": "img",
+                "alt": "motivation icon",
+                "asset": {
+                  "_ref": "image-2ffd0f9f24c32b4c9eaaa079a7d34e504973c38c-512x512-png",
+                  "_type": "reference"
+                }
+              },
+              "title": "200–300 zł mniej na jedzeniu tygodniowo."
+            }
+          ],
+          "title": "Co konkretnie się zmienia gdy zaczniesz używać Shoppin'go"
+        },
+        {
+          "_key": "pros-cons-pl",
+          "_type": "prosConsSection",
+          "consItems": [
+            {
+              "_key": "con-1-pl",
+              "text": "Dla kogoś kto szuka kolejnej aplikacji do wpisywania co zjadł"
+            },
+            {
+              "_key": "con-2-pl",
+              "text": "Dla kogoś komu odpowiada codzienny chaos z jedzeniem"
+            },
+            {
+              "_key": "con-3-pl",
+              "text": "Dla kogoś kto kupi dostęp i nic z tym nie zrobi"
+            }
+          ],
+          "consTitle": "Zanim przejdziesz dalej – dla kogo Shoppin'go NIE jest:",
+          "prosItems": [
+            {
+              "_key": "pro-1-pl",
+              "text": "Chcesz przestać codziennie zadawać pytanie 'co na obiad?'"
+            },
+            {
+              "_key": "pro-2-pl",
+              "text": "Chcesz zrobić zakupy raz w tygodniu, a nie codziennie biegać do sklepu"
+            },
+            {
+              "_key": "pro-3-pl",
+              "text": "Chcesz realnie obniżyć rachunki za jedzenie bez filozofowania"
+            },
+            {
+              "_key": "pro-4-pl",
+              "text": "Chcesz jeść zdrowiej, ale bez liczenia kalorii i bez dietetyka"
+            },
+            {
+              "_key": "pro-5-pl",
+              "text": "Chcesz zacząć w niedzielę i mieć spokój przez cały tydzień"
+            }
+          ],
+          "prosTitle": "Shoppin'go jest dla Ciebie, jeśli:"
+        },
+        {
+          "_key": "b2c-try-for-free-pl",
+          "_type": "tryForFreeSection",
+          "badges": [
+            {
+              "_key": "b2c-badge-1-pl",
+              "icon": {
+                "_type": "img",
+                "alt": "calendar icon",
+                "asset": {
+                  "_ref": "image-33ebda6791857bc66386b59c6914e6c68cb04e47-108x119-png",
+                  "_type": "reference"
+                }
+              },
+              "label": "14 dni za darmo"
+            },
+            {
+              "_key": "b2c-badge-2-pl",
+              "icon": {
+                "_type": "img",
+                "alt": "lock icon",
+                "asset": {
+                  "_ref": "image-7b3842a513ab0cb3437c7569c713d792e509ef91-72x119-png",
+                  "_type": "reference"
+                }
+              },
+              "label": "Bez zobowiązań"
+            },
+            {
+              "_key": "b2c-badge-3-pl",
+              "icon": {
+                "_type": "img",
+                "alt": "star icon",
+                "asset": {
+                  "_ref": "image-1f5fc73610cb25b56eb7549e3b28a01195766d52-108x80-png",
+                  "_type": "reference"
+                }
+              },
+              "label": "Pełny dostęp do aplikacji i funkcji AI"
+            }
+          ],
+          "bgImg": {
+            "_type": "img",
+            "alt": "bg leaves",
+            "asset": {
+              "_ref": "image-26c7c4c632f5cd943f8c4f515bd9afffebaa162e-2000x1414-png",
+              "_type": "reference"
+            }
+          },
+          "ctaLabel": "Zacznij planować za darmo",
+          "ctaUrl": "#price-list",
+          "subtitle": "Bez zobowiązań - anuluj kiedy chcesz.",
+          "title": "Wypróbuj za darmo\nprzez 14 dni"
+        },
+        {
+          "_key": "b2c-early-access-pl",
+          "_type": "earlyAccessDiscountSection",
+          "benefits": [
+            {
+              "_key": "b2c-ea-1-pl",
+              "icon": {
+                "_type": "img",
+                "alt": "award",
+                "asset": {
+                  "_ref": "image-f125958502e5431baeebde9cf3bb7ed2baf968c3-72x80-png",
+                  "_type": "reference"
+                }
+              },
+              "label": "Cena wczesnego dostępu"
+            },
+            {
+              "_key": "b2c-ea-2-pl",
+              "icon": {
+                "_type": "img",
+                "alt": "award",
+                "asset": {
+                  "_ref": "image-cf848fd6109877febe9142dc61a0ed8e6b27e413-72x80-png",
+                  "_type": "reference"
+                }
+              },
+              "label": "14 dni na darmowe przetestowanie"
+            },
+            {
+              "_key": "b2c-ea-3-pl",
+              "icon": {
+                "_type": "img",
+                "alt": "home",
+                "asset": {
+                  "_ref": "image-02a9bed8749972ef87e3bcd8e9b4950709f6eeaf-72x80-png",
+                  "_type": "reference"
+                }
+              },
+              "label": "Anuluj w każdej chwili"
+            }
+          ],
+          "ctaLabel": "Zablokuj cenę i zacznij za darmo",
+          "ctaPreLabel": "early access",
+          "ctaUrl": "#price-list",
+          "description": "Teraz jesteś jednym z pierwszych. Twoja cena startowa jest niższa niż ta, którą zobaczą użytkownicy, którzy dołączą za kilka miesięcy. Zacznij z 14-dniowym testem za darmo.",
+          "newPrice": "14,99 zł / mies.",
+          "oldPrice": "29,99 zł / mies.",
+          "title": "Early Access – wejdź teraz, zanim cena wzrośnie"
+        },
+        {
+          "_key": "b2c-price-list-pl",
+          "_type": "priceList",
+          "backButtonLabel": "Wróć",
+          "description": "Zacznij za darmo. Zostań, jeśli Ci się spodoba.",
+          "emailLabel": "Email",
+          "emailPlaceholder": "jan@kowalski.pl",
+          "firstNameLabel": "Imię",
+          "firstNamePlaceholder": "Jan",
+          "formDescription": "Podaj swoje dane, aby kontynuować",
+          "formTitle": "Utwórz konto",
+          "lastNameLabel": "Nazwisko",
+          "lastNamePlaceholder": "Kowalski",
+          "monthlyButtonLabel": "Wybierz plan miesięczny",
+          "monthlyFeatures": [
+            "Pełna elastyczność – anuluj w każdej chwili",
+            "Niższy próg wejścia – bez większego zobowiązania",
+            "14 dni na darmowe przetestowanie"
+          ],
+          "passwordConfirmLabel": "Potwierdź hasło",
+          "passwordConfirmPlaceholder": "Potwierdź hasło",
+          "passwordLabel": "Hasło",
+          "passwordMismatchError": "Hasła nie są zgodne.",
+          "passwordPlaceholder": "Minimum 8 znaków",
+          "passwordTooShortError": "Hasło musi mieć co najmniej 8 znaków.",
+          "phoneLabel": "Telefon",
+          "phonePlaceholder": "+48 123 456 789",
+          "productType": "premium",
+          "submitButtonText": "Utwórz konto i przejdź do płatności",
+          "submittingText": "Tworzenie konta...",
+          "successTitle": "Konto gotowe!",
+          "title": "Cennik",
+          "yearlyButtonLabel": "Wybierz plan roczny (oszczędzasz 2 miesiące)",
+          "yearlyFeatures": [
+            "Jeden rachunek na cały rok – spokój głowy",
+            "Stała cena – nie martwisz się podwyżkami przez cały rok",
+            "Oszczędzasz odpowiednik 2 miesięcy subskrypcji",
+            "14 dni na darmowe przetestowanie"
+          ]
+        }
+      ],
+      "slug": {
+        "_type": "slug",
+        "current": "/premium-landing"
+      },
+      "title": "Dla konsumenta"
+    }
+  ]
+}
