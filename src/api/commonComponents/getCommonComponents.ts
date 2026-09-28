@@ -3,7 +3,7 @@ import { sanityClient } from "@/sanity/lib/client";
 import { slugWithTitleQuery } from "@/src/api/sanityQueries";
 import { ICommonComponents } from "@/src/types/common";
 
-const getCommonComponents = async (): Promise<ICommonComponents> => {
+const getCommonComponents = async (): Promise<ICommonComponents | null> => {
   const commonComponents = await sanityClient.fetch(
     `*[_type == $type][0] {
       ...,

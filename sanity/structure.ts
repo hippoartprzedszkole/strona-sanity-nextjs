@@ -18,9 +18,4 @@ export const structure: StructureResolver = (S) =>
         title: "Common components",
         isSingleton: true,
       }),
-      createStructureListItem({
-        S,
-        schemaType: MODELS.SURVEY_RESPONSE,
-        title: "Survey Responses",
-      }),
     ]);
