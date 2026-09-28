@@ -1,12 +1,6 @@
-import { ConfigContext as SanityConfigContext } from "sanity";
+import { ConfigContext } from "sanity";
 import { apiVersion } from "@/sanity/env";
 import { Rule } from "sanity";
-
-interface ExtendedConfigContext extends SanityConfigContext {
-  document?: {
-    language?: string;
-  };
-}
 
 export const required = (Rule: Rule) => Rule.required();
 export const unique = (Rule: Rule) => Rule.unique();
@@ -19,19 +13,13 @@ export const maxLengthArray = (maxLength: number) => (Rule: Rule) =>
     return true;
   });
 
-export const isSlugUnique = async (
-  slug: string,
-  context: ExtendedConfigContext
-) => {
-  const { language } = context.document || {};
-
-  const query = `*[slug.current == $slug && language == $language]`;
+export const isSlugUnique = async (slug: string, context: ConfigContext) => {
+  const query = `*[slug.current == $slug]`;
 
   const documents: { _id: string }[] = await context
     .getClient({ apiVersion })
     .fetch(query, {
       slug,
-      language,
     });
 
   return (
