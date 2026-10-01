@@ -1,6 +1,7 @@
 import getPages from "./handlers/getPages.mjs";
 import { writeFileSync } from "fs";
 // import appendPageSections from "./handlers/appendPageSections.mjs";
+// import uploadSectionAssets from "./handlers/uploadSectionAssets.mjs";
 
 getPages({ slug: "/premium-landing", language: "pl" })
   .then((result) => {
@@ -12,6 +13,9 @@ getPages({ slug: "/premium-landing", language: "pl" })
 
 // const PAGE_ID = "6862fa38-01c4-493b-908a-59970458d61d";
 
+// // Upload images with the given prefix; use as `img.Logo` or `img["2.1"]` in a field of type `img`
+// const img = await uploadSectionAssets(2);
+//
 // const sections = [
 //   {
 //     _type: "threeTilesSection",
