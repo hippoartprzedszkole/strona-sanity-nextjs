@@ -7,6 +7,7 @@ export enum SECTION_NAMES {
   INFO_COLUMNS_BAR = "infoColumnsBar",
   ICONS_ROW = "iconsRow",
   MORE_THAN_KINDERGARTEN = "moreThanKindergarten",
+  LANGUAGES_SECTION = "languagesSection",
 }
 
 const SECTIONS: Record<
@@ -37,6 +38,11 @@ const SECTIONS: Record<
     name: SECTION_NAMES.MORE_THAN_KINDERGARTEN,
     title: "More than kindergarten",
     component: dynamic(() => import("./MoreThanKindergarten")),
+  },
+  [SECTION_NAMES.LANGUAGES_SECTION]: {
+    name: SECTION_NAMES.LANGUAGES_SECTION,
+    title: "Languages section",
+    component: dynamic(() => import("./LanguagesSection")),
   },
 };
 

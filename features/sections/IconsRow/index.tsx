@@ -14,7 +14,7 @@ export default async function IconsRow({
   iconList,
 }: IIconsRow) {
   return (
-    <section className="w-full my-8 lg:my-16">
+    <section className="w-full mt-8 mb-2 lg:mt-16 lg:mb-4">
       <SectionPaddingWrapper className="py-8 lg:py-10">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-8">
           <div className="flex flex-1 flex-col gap-4 font-menu text-navy lg:gap-5">
