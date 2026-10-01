@@ -15,6 +15,7 @@ import infoColumnsBar from "@/features/sections/InfoColumnsBar/schema";
 import iconsRow from "@/features/sections/IconsRow/schema";
 import moreThanKindergarten from "@/features/sections/MoreThanKindergarten/schema";
 import languagesSection from "@/features/sections/LanguagesSection/schema";
+import dayInHippoArt from "@/features/sections/DayInHippoArt/schema";
 
 const models = [page, commonComponentsSchema];
 
@@ -29,6 +30,7 @@ const sections = [
   iconsRow,
   moreThanKindergarten,
   languagesSection,
+  dayInHippoArt,
 ];
 
 export const schema: { types: SchemaTypeDefinition[] } = {

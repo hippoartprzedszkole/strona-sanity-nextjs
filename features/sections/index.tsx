@@ -8,6 +8,7 @@ export enum SECTION_NAMES {
   ICONS_ROW = "iconsRow",
   MORE_THAN_KINDERGARTEN = "moreThanKindergarten",
   LANGUAGES_SECTION = "languagesSection",
+  DAY_IN_HIPPOART = "dayInHippoArt",
 }
 
 const SECTIONS: Record<
@@ -43,6 +44,11 @@ const SECTIONS: Record<
     name: SECTION_NAMES.LANGUAGES_SECTION,
     title: "Languages section",
     component: dynamic(() => import("./LanguagesSection")),
+  },
+  [SECTION_NAMES.DAY_IN_HIPPOART]: {
+    name: SECTION_NAMES.DAY_IN_HIPPOART,
+    title: "Day in HippoArt",
+    component: dynamic(() => import("./DayInHippoArt")),
   },
 };
 
