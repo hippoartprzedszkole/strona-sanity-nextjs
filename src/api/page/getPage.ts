@@ -65,6 +65,12 @@ const getPage = async ({ slug }: { slug: string }): Promise<IPage> => {
         rightStainImg {
           ${imageAssetQuery}
         },
+        iconList[] {
+          ...,
+          icon {
+            ${imageAssetQuery}
+          }
+        },
         tileList[] {
           ...,
           icon {

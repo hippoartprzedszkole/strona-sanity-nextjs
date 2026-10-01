@@ -12,6 +12,7 @@ import footer from "@/features/layout/Footer/schema";
 import ctaBanner from "@/features/sections/CTABanner/schema";
 import heroSection from "@/features/sections/HeroSection/schema";
 import infoColumnsBar from "@/features/sections/InfoColumnsBar/schema";
+import iconsRow from "@/features/sections/IconsRow/schema";
 import moreThanKindergarten from "@/features/sections/MoreThanKindergarten/schema";
 
 const models = [page, commonComponentsSchema];
@@ -24,6 +25,7 @@ const sections = [
   ctaBanner,
   heroSection,
   infoColumnsBar,
+  iconsRow,
   moreThanKindergarten,
 ];
 

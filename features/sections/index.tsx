@@ -5,6 +5,7 @@ export enum SECTION_NAMES {
   CTA_BANNER = "ctaBanner",
   HERO_SECTION = "heroSection",
   INFO_COLUMNS_BAR = "infoColumnsBar",
+  ICONS_ROW = "iconsRow",
   MORE_THAN_KINDERGARTEN = "moreThanKindergarten",
 }
 
@@ -26,6 +27,11 @@ const SECTIONS: Record<
     name: SECTION_NAMES.INFO_COLUMNS_BAR,
     title: "Info columns bar",
     component: dynamic(() => import("./InfoColumnsBar")),
+  },
+  [SECTION_NAMES.ICONS_ROW]: {
+    name: SECTION_NAMES.ICONS_ROW,
+    title: "Icons row",
+    component: dynamic(() => import("./IconsRow")),
   },
   [SECTION_NAMES.MORE_THAN_KINDERGARTEN]: {
     name: SECTION_NAMES.MORE_THAN_KINDERGARTEN,
