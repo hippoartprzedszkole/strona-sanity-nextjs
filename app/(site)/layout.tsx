@@ -79,9 +79,7 @@ export default async function SiteLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
       </head>
-      <body
-        className={clsx(fredoka.variable, outfit.variable, "antialiased")}
-      >
+      <body className={clsx(fredoka.variable, outfit.variable, "antialiased")}>
         <Layout commonComponents={commonComponents}>{children}</Layout>
         {gaId && <GoogleAnalytics gaId={gaId} />}
       </body>

@@ -1,6 +1,6 @@
 import { MODELS } from "@/src/types/schemas";
 import { sanityClient } from "@/sanity/lib/client";
-import { slugWithTitleQuery } from "@/src/api/sanityQueries";
+import { imageAssetQuery, slugWithTitleQuery } from "@/src/api/sanityQueries";
 import { ICommonComponents } from "@/src/types/common";
 
 const getCommonComponents = async (): Promise<ICommonComponents | null> => {
@@ -11,7 +11,10 @@ const getCommonComponents = async (): Promise<ICommonComponents | null> => {
         ...,
         menu[]-> {
           ${slugWithTitleQuery}
-        }
+        },
+        menuItemHoverImg { ..., ${imageAssetQuery} },
+        btnIcon { ..., ${imageAssetQuery} },
+        rightSideIcon { ..., ${imageAssetQuery} }
       },
       footer {
         ...,

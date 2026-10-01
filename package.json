@@ -39,6 +39,7 @@
     "react-toastify": "^11.0.5",
     "react-tooltip": "^5.29.1",
     "sanity": "^3.80.1",
+    "styled-components": "^6.5.3",
     "yup": "^1.6.1"
   },
   "devDependencies": {

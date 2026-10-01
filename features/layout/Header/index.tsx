@@ -9,6 +9,8 @@ import SectionPaddingWrapper from "@/src/components/SectionPaddingWrapper";
 import { useParams } from "next/navigation";
 import OpenSidebarModal from "@/src/components/OpenSidebarModal";
 import Menu from "./Menu";
+import DesktopMenu from "./DesktopMenu";
+import BookVisit from "./BookVisit";
 import { useEffect, useState } from "react";
 import { useScrollbarContext } from "@/src/context/ScrollbarContext";
 
@@ -68,7 +70,7 @@ const Header = () => {
           <div className={clsx("flex-1 w-full flex")}>
             <div className="flex-1 flex flex-row justify-between items-center">
               <div
-                className={`cursor-pointer w-[${iconSize}] h-[${iconSize}] relative`}
+                className={`tablet-h:hidden cursor-pointer w-[${iconSize}] h-[${iconSize}] relative`}
               >
                 <HamburgerMenu
                   isOpen={isMenuOpen}
@@ -76,7 +78,7 @@ const Header = () => {
                   width={30}
                   height={20}
                   strokeWidth={3}
-                  color="var(--color-green)"
+                  color="var(--color-pink)"
                   animationDuration={0.5}
                 />
               </div>
@@ -95,17 +97,26 @@ const Header = () => {
                   </div>
                 </Link>
               )}
+
+              <div className="ml-auto flex items-center gap-10">
+                <div className="hidden tablet-h:block">
+                  <DesktopMenu />
+                </div>
+                <BookVisit />
+              </div>
             </div>
           </div>
         </SectionPaddingWrapper>
       </header>
-      <OpenSidebarModal
-        side="left"
-        isOpen={isMenuOpen}
-        closeSidebar={closeSidebars}
-      >
-        <Menu />
-      </OpenSidebarModal>
+      <div className="tablet-h:hidden">
+        <OpenSidebarModal
+          side="left"
+          isOpen={isMenuOpen}
+          closeSidebar={closeSidebars}
+        >
+          <Menu />
+        </OpenSidebarModal>
+      </div>
     </>
   );
 };

@@ -30,6 +30,7 @@
   --color-gray-light: #e8e4db; /* Szary (obramowania, linie podziału)[cite: 1] */
 
   /* Kolory tekstu */
+  --color-navy: #1e2a78; /* Granatowy (menu) */
   --color-text: #333333; /* Główny tekst[cite: 1] */
   --color-text-dark: #212427; /* Ciemny tekst (nagłówki)[cite: 1] */
   --color-gray: #808080; /* Szary tekst i pomocnicze ikony[cite: 1] */
@@ -43,9 +44,11 @@
     rgba(111, 157, 34, 0.31) 46%,
     rgba(247, 110, 25, 0.31) 100%
   );
+  --breakpoint-tablet-h: 900px; /* = sizes.tabletHorizontal */
   --shadow-box: 1rem 1rem 2rem 1rem rgba(247, 110, 25, 0.08);
   --font-heading: var(--font-fredoka);
   --font-body: var(--font-outfit);
+  --font-menu: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", cursive;
 }
 
 html {
