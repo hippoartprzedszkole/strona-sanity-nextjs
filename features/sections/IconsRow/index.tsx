@@ -40,7 +40,7 @@ export default async function IconsRow({
                     </Text12>
                   </li>
                   {i === SEPARATOR_AFTER_INDEX && (
-                    <li aria-hidden className="hidden lg:block lg:flex-1">
+                    <li aria-hidden className="hidden lg:block lg:flex-1 lg:self-center">
                       <Image
                         sanityImage={separatorImg}
                         className="mx-auto h-[4.5rem] w-auto object-contain"
