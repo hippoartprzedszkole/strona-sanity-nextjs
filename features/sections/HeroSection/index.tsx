@@ -1,7 +1,7 @@
 import { IHeroSection } from "./types";
 import Image from "@/src/components/Image";
 import SectionPaddingWrapper from "@/src/components/SectionPaddingWrapper";
-import InternalLink from "@/src/components/InternalLink";
+import ButtonLink from "@/src/components/Button/ButtonLink";
 import { Text16, Text64 } from "@/src/components/Text";
 
 const LETTER_COLORS = [
@@ -62,24 +62,20 @@ export default async function HeroSection({
           </div>
 
           <div className="order-5 lg:order-none flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            <a
+            <ButtonLink
+              variant="pink"
               href={`tel:${pinkBtn.tel}`}
-              className="relative flex items-center justify-center min-h-12 pl-12 pr-6 rounded-md bg-pink text-white font-menu font-bold hover:scale-105 transition-transform duration-200"
-            >
-              <Image
-                sanityImage={pinkBtn.icon}
-                className="absolute left-4 top-1/2 -translate-y-1/2 h-6 w-auto"
-              />
-              {pinkBtn.label}
-            </a>
+              leftIcon={pinkBtn.icon}
+              text={pinkBtn.label}
+              className="pl-12 pr-6"
+            />
             {whiteBtn?.link && (
-              <InternalLink
+              <ButtonLink
+                variant="white"
                 page={whiteBtn.link}
-                className="flex items-center justify-center gap-2 min-h-12 px-6 rounded-md border border-blue bg-white text-navy font-menu font-bold hover:scale-105 transition-transform duration-200"
-              >
-                {whiteBtn.label}
-                <Image sanityImage={arrowIcon} className="h-4 w-auto" />
-              </InternalLink>
+                text={whiteBtn.label}
+                rightIcon={arrowIcon}
+              />
             )}
           </div>
         </div>

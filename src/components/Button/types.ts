@@ -7,5 +7,6 @@ export interface IButton {
   children?: ReactNode;
   className?: HTMLButtonElement["className"];
   leftIcon?: ISanityImage;
+  rightIcon?: ISanityImage;
   variant?: keyof typeof variantStyles;
 }

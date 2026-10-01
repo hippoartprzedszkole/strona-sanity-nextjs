@@ -1,8 +1,8 @@
 import clsx from "clsx";
 import { IButton } from "./types";
 import variantStyles from "./variantStyles";
+import ButtonContent from "./ButtonContent";
 import { ButtonHTMLAttributes } from "react";
-import Image from "../Image";
 
 const Button = ({
   disabled,
@@ -11,10 +11,10 @@ const Button = ({
   className,
   variant = "primary",
   leftIcon,
+  rightIcon,
   ...props
 }: IButton & ButtonHTMLAttributes<HTMLButtonElement>) => {
   const config = variantStyles[variant!];
-  const content = children ?? text;
 
   return (
     <button
@@ -26,16 +26,13 @@ const Button = ({
       )}
       {...props}
     >
-      {leftIcon && (
-        <span className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center">
-          <Image sanityImage={leftIcon} className="h-6 w-auto" />
-        </span>
-      )}
-      {config.wrapSpan ? (
-        <span className="relative z-[2]">{content}</span>
-      ) : (
-        content
-      )}
+      <ButtonContent
+        variant={variant}
+        leftIcon={leftIcon}
+        rightIcon={rightIcon}
+      >
+        {children ?? text}
+      </ButtonContent>
     </button>
   );
 };

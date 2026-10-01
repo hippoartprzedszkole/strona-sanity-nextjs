@@ -13,6 +13,8 @@ const SCROLL_BTN_BASE = "relative z-[1]";
 const variantStyles: Record<
   | "primary"
   | "pink"
+  | "green"
+  | "white"
   | "danger"
   | "dangerLink"
   | "scrollDownBtn"
@@ -29,6 +31,19 @@ const variantStyles: Record<
     baseClasses:
       "relative flex items-center justify-center min-h-12 rounded-md cursor-pointer " +
       "transition-transform duration-200 text-white font-menu font-bold text-base text-center",
+  },
+  green: {
+    className: "bg-green hover:scale-105 active:scale-105 active:shadow-xl px-6",
+    baseClasses:
+      "relative flex items-center justify-center gap-2 min-h-12 rounded-md cursor-pointer " +
+      "transition-transform duration-200 text-white font-menu font-bold uppercase text-center",
+  },
+  white: {
+    className:
+      "border border-blue bg-white hover:scale-105 active:scale-105 active:shadow-xl px-6",
+    baseClasses:
+      "relative flex items-center justify-center gap-2 min-h-12 rounded-md cursor-pointer " +
+      "transition-transform duration-200 text-navy font-menu font-bold text-center",
   },
   danger: { className: "bg-error", baseClasses: DEFAULT_BASE },
   dangerLink: {
