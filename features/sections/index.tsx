@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 export enum SECTION_NAMES {
   CTA_BANNER = "ctaBanner",
   HERO_SECTION = "heroSection",
+  INFO_COLUMNS_BAR = "infoColumnsBar",
 }
 
 const SECTIONS: Record<
@@ -19,6 +20,11 @@ const SECTIONS: Record<
     name: SECTION_NAMES.HERO_SECTION,
     title: "Hero section",
     component: dynamic(() => import("./HeroSection")),
+  },
+  [SECTION_NAMES.INFO_COLUMNS_BAR]: {
+    name: SECTION_NAMES.INFO_COLUMNS_BAR,
+    title: "Info columns bar",
+    component: dynamic(() => import("./InfoColumnsBar")),
   },
 };
 
