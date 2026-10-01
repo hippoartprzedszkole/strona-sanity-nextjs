@@ -1,8 +1,5 @@
 import HamburgerMenu from "react-hamburger-menu";
-import Image from "next/image";
 import useScrollPosition from "@/src/hooks/useScrollPosition";
-import Link from "next/link";
-import useWindowSize from "@/src/hooks/useWindowSize";
 import getTopOffset from "@/src/utils/getTopOffset";
 import clsx from "clsx";
 import SectionPaddingWrapper from "@/src/components/SectionPaddingWrapper";
@@ -16,25 +13,12 @@ import { useScrollbarContext } from "@/src/context/ScrollbarContext";
 
 const Header = () => {
   const { slug } = useParams();
-  const windowSize = useWindowSize();
   const topOffset = getTopOffset();
   const { scrolled } = useScrollPosition();
   const iconSize = "35px";
 
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const { showScrollbar, hideScrollbar } = useScrollbarContext();
-
-  let shadow = !windowSize.isMobile
-    ? "1rem 1rem 2rem 1rem rgba(247, 110, 25, 0.08)"
-    : "1rem 1rem 1rem 15px rgba(247, 110, 25, 0.2)";
-
-  let bgColor;
-  if (isMenuOpen || !slug) {
-    bgColor = "transparent";
-    shadow = "initial";
-  } else {
-    bgColor = scrolled ? "white" : "transparent";
-  }
 
   const closeSidebars = () => {
     setIsMenuOpen(false);
@@ -58,12 +42,12 @@ const Header = () => {
         className={clsx(
           slug ? "sticky" : "fixed",
           "top-0 left-0 right-0 z-[99999]",
-          scrolled && `shadow-${shadow}`,
           `w-full flex`,
         )}
         style={{
           height: topOffset,
-          backgroundColor: bgColor,
+          backgroundColor: "white",
+          boxShadow: scrolled ? "0 2px 12px rgba(0, 0, 0, 0.08)" : "none",
         }}
       >
         <SectionPaddingWrapper className="flex-1 flex">
@@ -82,21 +66,6 @@ const Header = () => {
                   animationDuration={0.5}
                 />
               </div>
-
-              {slug && (
-                <Link href="/">
-                  <div
-                    className={`${scrolled ? "scale-75" : ""} transition-transform duration-300`}
-                  >
-                    <Image
-                      src="/assets/logo/logo-vector-2.png"
-                      width={80}
-                      height={80}
-                      alt="logo"
-                    />
-                  </div>
-                </Link>
-              )}
 
               <div className="ml-auto flex items-center gap-10">
                 <div className="hidden tablet-h:block">

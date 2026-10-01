@@ -1,37 +1,16 @@
-import getPages from "./handlers/getPages.mjs";
-import { writeFileSync } from "fs";
-// import appendPageSections from "./handlers/appendPageSections.mjs";
-// import uploadSectionAssets from "./handlers/uploadSectionAssets.mjs";
+// import { client } from "./client.mjs";
 
-getPages({ slug: "/premium-landing", language: "pl" })
-  .then((result) => {
-    const json = JSON.stringify(result, null, 2);
-    writeFileSync("DBHandler/output.json", json, "utf-8");
-    console.log("Saved to DBHandler/output.json");
-  })
-  .catch(console.error);
+// const PAGE_ID = "75670d89-490c-4481-ac1c-04673bcdcee4"; // "/"
 
-// const PAGE_ID = "6862fa38-01c4-493b-908a-59970458d61d";
+// const { header } = await client.fetch(
+//   `*[_type=="commonComponents"][0]{header{btnIcon,btnPhone}}`,
+// );
 
-// // Upload images with the given prefix; use as `img.Logo` or `img["2.1"]` in a field of type `img`
-// const img = await uploadSectionAssets(2);
-//
-// const sections = [
-//   {
-//     _type: "threeTilesSection",
-//     _key: "three-tiles-pl",
-//     title: "Czy zmagasz się z tymi problemami?",
-//     tiles: [
-//       {
-//         _key: "tile-1-pl",
-//         title: "Strata czasu\nna monotonną pracę",
-//         description:
-//           "Godziny na ręczne układanie, poprawki w PDF-ach i ciągłe prośby klienta o zmiany.",
-//       },
-//     ],
-//   },
-// ];
-
-// appendPageSections(PAGE_ID, sections)
-//   .then((result) => console.log("Done:", result))
-//   .catch(console.error);
+// const result = await client
+//   .patch(PAGE_ID)
+//   .set({
+//     'sections[_key=="hero-section"].pinkBtn.icon': header.btnIcon,
+//     'sections[_key=="hero-section"].pinkBtn.tel': header.btnPhone,
+//   })
+//   .commit();
+// console.log("Done:", result._id);

@@ -10,6 +10,7 @@ import header from "@/features/layout/Header/schema";
 import footer from "@/features/layout/Footer/schema";
 
 import ctaBanner from "@/features/sections/CTABanner/schema";
+import heroSection from "@/features/sections/HeroSection/schema";
 
 const models = [page, commonComponentsSchema];
 
@@ -17,7 +18,7 @@ const partials = [richText, img];
 
 const commonComponents = [header, footer];
 
-const sections = [ctaBanner];
+const sections = [ctaBanner, heroSection];
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [...models, ...sections, ...partials, ...commonComponents],

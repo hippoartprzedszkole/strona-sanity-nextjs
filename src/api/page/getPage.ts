@@ -30,71 +30,40 @@ const getPage = async ({ slug }: { slug: string }): Promise<IPage> => {
         img {
           ${imageAssetQuery}
         },
-        bgImg {
+      
+ 
+        mainImg {
           ${imageAssetQuery}
         },
-        mobileBg {
+        logo {
           ${imageAssetQuery}
         },
-        desktopBg {
+        blueBoxImg {
           ${imageAssetQuery}
         },
-        mockupVideo {
-          ${assetQuery}
-        },
-        mainImage {
+        hippoImg {
           ${imageAssetQuery}
         },
-        bullets[] {
-          ...,
-          img {
-            ${imageAssetQuery}
-          }
+        heartIcon {
+          ${imageAssetQuery}
         },
-        testimonials[] {
-          ...,
-          avatar {
-            ${imageAssetQuery}
-          }
+        starIcon {
+          ${imageAssetQuery}
         },
-        tiles[] {
+        arrowIcon {
+          ${imageAssetQuery}
+        },
+        pinkBtn {
           ...,
           icon {
             ${imageAssetQuery}
           }
         },
-        badges[] {
+        whiteBtn {
           ...,
-          icon {
-            ${imageAssetQuery}
+          link-> {
+            ${slugWithTitleQuery}
           }
-        },
-        benefits[] {
-          ...,
-          icon {
-            ${imageAssetQuery}
-          }
-        },
-        files[] {
-          ...,
-          file {
-           ${assetQuery}
-          }
-        },
-        video {
-          ${assetQuery}
-        },
-        appStoreImg {
-          ${imageAssetQuery}
-        },
-        googlePlayImg {
-          ${imageAssetQuery}
-        },
-        appStoreQR {
-          ${imageAssetQuery}
-        },
-        googlePlayQR {
-          ${imageAssetQuery}
         },
         expertLandingTile {
           ...,
