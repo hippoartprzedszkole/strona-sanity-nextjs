@@ -4,6 +4,7 @@ import getPage from "@/src/api/page/getPage";
 import getAllPageSlugs from "@/src/api/page/getAllPageSlugs";
 import generateMetadataObj from "@/src/utils/generateMetadataObj";
 import { Metadata } from "next";
+import { DEFAULT_SEO_DESCRIPTION } from "@/src/utils/seoDefaults";
 
 export const revalidate = false;
 
@@ -39,8 +40,7 @@ export async function generateMetadata({
     ...generateMetadataObj({
       title: page.title,
       description:
-        page.seo?.description ??
-        "Shoppin'go – dietetyk i lista zakupów w kieszeni.",
+        page.seo?.description ?? DEFAULT_SEO_DESCRIPTION,
       canonical: canonicalUrl,
       locale: "pl_PL",
       ogTitle: page.seo?.ogTitle,

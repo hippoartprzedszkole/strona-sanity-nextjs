@@ -7,6 +7,7 @@ import { isSlugUnique } from "@/src/utils/schemaValidation";
 import { defineType } from "sanity";
 import { MODELS } from "@/src/types/schemas";
 import { SECTION_NAMES } from "@/features/sections";
+import { DEFAULT_SEO_DESCRIPTION } from "@/src/utils/seoDefaults";
 
 export default defineType({
   name: MODELS.PAGE,
@@ -48,12 +49,17 @@ export default defineType({
       title: "SEO",
       type: "object",
       group: "seo",
+      initialValue: {
+        description: DEFAULT_SEO_DESCRIPTION,
+      },
       fields: [
         {
           name: "description",
           title: "Meta description",
           type: "text",
           rows: 3,
+          description:
+            "Domyślnie wstawiony jest opis ogólny przedszkola – zmień go, aby nadpisać dla tej strony",
         },
         {
           name: "ogTitle",

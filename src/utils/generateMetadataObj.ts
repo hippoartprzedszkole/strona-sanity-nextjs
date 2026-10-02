@@ -12,7 +12,7 @@ export default function generateMetadataObj(seo: IMetadata): Metadata {
       title: seo.ogTitle ?? seo.title,
       description: seo.description,
       url: seo.canonical,
-      siteName: seo.siteName ?? "Shoppin'go",
+      siteName: seo.siteName ?? "Przedszkole HippoArt",
       locale: seo.locale,
       type: "website",
       ...(seo.ogImage && {

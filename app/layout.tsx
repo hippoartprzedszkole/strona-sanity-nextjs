@@ -1,27 +1,26 @@
 import "./globals.css";
 import { Metadata } from "next";
+import { DEFAULT_SEO_DESCRIPTION } from "@/src/utils/seoDefaults";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_FRONTEND_URL!),
   title: {
-    default: "Shoppin'go – lista zakupów i planer posiłków",
-    template: "%s | Shoppin'go",
+    default: "Przedszkole HippoArt – Artystyczno-Językowe w Wieliczce",
+    template: "%s | Przedszkole HippoArt",
   },
-  description:
-    "Shoppin'go – inteligentna aplikacja mobilna: lista zakupów, planer posiłków i asystent diety w jednym miejscu. Pobierz na iOS i Android.",
+  description: DEFAULT_SEO_DESCRIPTION,
   keywords: [
-    "shoppin'go",
-    "shoppingo",
-    "lista zakupów",
-    "planer posiłków",
-    "aplikacja dietetyczna",
-    "asystent diety",
-    "zakupy spożywcze",
-    "meal planner",
-    "shopping list app",
+    "przedszkole HippoArt",
+    "Hippo Art",
+    "przedszkole Wieliczka",
+    "przedszkole artystyczne",
+    "przedszkole językowe",
+    "niepubliczne przedszkole Wieliczka",
+    "zapisy do przedszkola Wieliczka",
+    "przedszkole artystyczno-językowe",
   ],
   openGraph: {
-    siteName: "Shoppin'go",
+    siteName: "Przedszkole HippoArt",
     type: "website",
     locale: "pl_PL",
   },
