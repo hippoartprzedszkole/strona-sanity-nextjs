@@ -17,6 +17,7 @@ import moreThanKindergarten from "@/features/sections/MoreThanKindergarten/schem
 import languagesSection from "@/features/sections/LanguagesSection/schema";
 import dayInHippoArt from "@/features/sections/DayInHippoArt/schema";
 import forParentsSection from "@/features/sections/ForParentsSection/schema";
+import galleryPreview from "@/features/sections/GalleryPreview/schema";
 
 const models = [page, commonComponentsSchema];
 
@@ -33,6 +34,7 @@ const sections = [
   languagesSection,
   dayInHippoArt,
   forParentsSection,
+  galleryPreview,
 ];
 
 export const schema: { types: SchemaTypeDefinition[] } = {

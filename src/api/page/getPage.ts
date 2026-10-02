@@ -173,6 +173,13 @@ const getPage = async ({ slug }: { slug: string }): Promise<IPage> => {
             }
           }
         },
+        rightSideImg {
+          ${imageAssetQuery}
+        },
+        photos[] {
+          ...,
+          ${imageAssetQuery}
+        },
         premiumLandingTile {
           ...,
           img {
