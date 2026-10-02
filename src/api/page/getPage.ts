@@ -185,6 +185,13 @@ const getPage = async ({ slug }: { slug: string }): Promise<IPage> => {
             }
           }
         },
+        content[] {
+          ...,
+          _type == "img" => {
+            ...,
+            ${imageAssetQuery}
+          }
+        },
         rightSideImg {
           ${imageAssetQuery}
         },

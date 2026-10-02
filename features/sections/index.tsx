@@ -12,6 +12,7 @@ export enum SECTION_NAMES {
   FOR_PARENTS_SECTION = "forParentsSection",
   GALLERY_PREVIEW = "galleryPreview",
   INFO_BOXES = "infoBoxes",
+  RICH_TEXT_SECTION = "richTextSection",
 }
 
 const SECTIONS: Record<
@@ -67,6 +68,11 @@ const SECTIONS: Record<
     name: SECTION_NAMES.INFO_BOXES,
     title: "Info boxes",
     component: dynamic(() => import("./InfoBoxes")),
+  },
+  [SECTION_NAMES.RICH_TEXT_SECTION]: {
+    name: SECTION_NAMES.RICH_TEXT_SECTION,
+    title: "Rich text section",
+    component: dynamic(() => import("./RichTextSection")),
   },
 };
 

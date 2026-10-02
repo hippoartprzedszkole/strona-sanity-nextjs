@@ -19,6 +19,7 @@ import dayInHippoArt from "@/features/sections/DayInHippoArt/schema";
 import forParentsSection from "@/features/sections/ForParentsSection/schema";
 import galleryPreview from "@/features/sections/GalleryPreview/schema";
 import infoBoxes from "@/features/sections/InfoBoxes/schema";
+import richTextSection from "@/features/sections/RichTextSection/schema";
 
 const models = [page, commonComponentsSchema];
 
@@ -37,6 +38,7 @@ const sections = [
   forParentsSection,
   galleryPreview,
   infoBoxes,
+  richTextSection,
 ];
 
 export const schema: { types: SchemaTypeDefinition[] } = {
