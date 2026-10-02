@@ -1,77 +1,48 @@
 // import appendPageSections from "./handlers/appendPageSections.mjs";
 
-// const SUBPAGE_ID = "318de78d-efbf-4e97-9576-246038094eb1"; // "/podstrona"
+// const CALENDAR_PAGE_ID = "1555a99f-1aac-4747-8520-5527cb384c16"; // "/kalendarz"
 
 // const span = (text, marks = []) => ({ _type: "span", text, marks });
-// const block = (style, children, extra = {}) => ({
+// const block = (style, children) => ({
 //   _type: "block",
 //   style,
 //   markDefs: [],
 //   children,
-//   ...extra,
 // });
 // const row = (key, cells) => ({ _key: key, _type: "row", cells });
 
-// await appendPageSections(SUBPAGE_ID, [
+// await appendPageSections(CALENDAR_PAGE_ID, [
 //   {
 //     _type: "richTextSection",
-//     _key: "rich-text-menu",
+//     _key: "rich-text-calendar",
 //     content: [
-//       block("h2", [span("Jadłospis na ten tydzień")]),
+//       block("h2", [span("Kalendarz wydarzeń")]),
 //       block("normal", [
-//         span("Wszystkie posiłki przygotowujemy na miejscu ze "),
-//         span("świeżych, sezonowych składników", ["strong"]),
-//         span(". Alergeny oznaczamy w nawiasach."),
+//         span("Najbliższe wydarzenia w HippoArt. "),
+//         span("O szczegółach informujemy z wyprzedzeniem", ["strong"]),
+//         span("."),
 //       ]),
 //       {
 //         _type: "table",
-//         _key: "menu-table",
+//         _key: "calendar-table",
 //         hasHeader: true,
 //         rows: [
-//           row("r0", ["Dzień", "Śniadanie", "Obiad", "Podwieczorek"]),
+//           row("r0", ["Data", "Wydarzenie"]),
 //           row("r1", [
-//             "Poniedziałek",
-//             "Owsianka z owocami",
-//             "Rosół z makaronem, kurczak z ryżem",
-//             "Jogurt z musli",
+//             "5 listopada",
+//             "Dzień Pluszowego Misia – przynosimy ulubione maskotki",
 //           ]),
 //           row("r2", [
-//             "Wtorek",
-//             "Kanapki z twarożkiem",
-//             "Krem z dyni, pulpeciki w sosie",
-//             "Jabłko, wafle ryżowe",
+//             "11 listopada",
+//             "Święto Niepodległości – poranek patriotyczny",
 //           ]),
-//           row("r3", [
-//             "Środa",
-//             "Jajecznica ze szczypiorkiem",
-//             "Zupa pomidorowa, makaron z warzywami",
-//             "Budyń waniliowy",
-//           ]),
-//           row("r4", [
-//             "Czwartek",
-//             "Płatki z mlekiem",
-//             "Barszcz, ryba z ziemniakami",
-//             "Marchewka, hummus",
-//           ]),
-//           row("r5", [
-//             "Piątek",
-//             "Naleśniki z dżemem",
-//             "Zupa ogórkowa, kasza z gulaszem",
-//             "Koktajl owocowy",
-//           ]),
+//           row("r3", ["29 listopada", "Andrzejki w przedszkolu"]),
+//           row("r4", ["6 grudnia", "Mikołajki – spotkanie z Mikołajem"]),
+//           row("r5", ["18 grudnia", "Jasełka i wigilia przedszkolna"]),
+//           row("r6", ["22 grudnia – 2 stycznia", "Przerwa świąteczna"]),
+//           row("r7", ["21 stycznia", "Dzień Babci i Dziadka – występ dzieci"]),
 //         ],
 //       },
-//       block("h4", [span("Uwaga")]),
-//       block(
-//         "bullet" === "" ? "normal" : "normal",
-//         [
-//           span("Jadłospis może ulec zmianie. ", ["em"]),
-//           span("Diety indywidualne", ["strong"]),
-//           span(" realizujemy po wcześniejszym zgłoszeniu."),
-//         ],
-//         { listItem: "bullet", level: 1 },
-//       ),
-//       block("small", [span("Smacznego!", ["underline"])]),
 //     ],
 //   },
 // ]);

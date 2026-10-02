@@ -10,12 +10,12 @@ export const structure: StructureResolver = (S) =>
       createStructureListItem({
         S,
         schemaType: MODELS.PAGE,
-        title: "Landing page",
+        title: "Strony",
       }),
       createStructureListItem({
         S,
         schemaType: MODELS.COMMON_COMPONENTS,
-        title: "Common components",
+        title: "Komponenty wspólne",
         isSingleton: true,
       }),
     ]);
