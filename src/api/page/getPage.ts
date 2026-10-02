@@ -119,6 +119,60 @@ const getPage = async ({ slug }: { slug: string }): Promise<IPage> => {
             ${slugWithTitleQuery}
           }
         },
+        firstBox {
+          ...,
+          bottomImg {
+            ${imageAssetQuery}
+          },
+          leftImg {
+            ${imageAssetQuery}
+          }
+        },
+        secondBox {
+          ...,
+          leftImg {
+            ${imageAssetQuery}
+          },
+          rightImg {
+            ${imageAssetQuery}
+          },
+          btn {
+            ...,
+            link-> {
+              ${slugWithTitleQuery}
+            }
+          }
+        },
+        thirdBox {
+          ...,
+          leftImg {
+            ${imageAssetQuery}
+          },
+          rightImg {
+            ${imageAssetQuery}
+          },
+          btn {
+            ...,
+            link-> {
+              ${slugWithTitleQuery}
+            }
+          }
+        },
+        fourthBox {
+          ...,
+          leftImg {
+            ${imageAssetQuery}
+          },
+          rightImg {
+            ${imageAssetQuery}
+          },
+          btn {
+            ...,
+            link-> {
+              ${slugWithTitleQuery}
+            }
+          }
+        },
         premiumLandingTile {
           ...,
           img {

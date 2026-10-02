@@ -16,6 +16,7 @@ const variantStyles: Record<
   | "green"
   | "white"
   | "blue"
+  | "orange"
   | "danger"
   | "dangerLink"
   | "scrollDownBtn"
@@ -41,6 +42,12 @@ const variantStyles: Record<
   },
   blue: {
     className: "bg-blue hover:scale-105 active:scale-105 active:shadow-xl px-6",
+    baseClasses:
+      "relative flex items-center justify-center gap-2 min-h-12 rounded-md cursor-pointer " +
+      "transition-transform duration-200 text-white font-menu font-bold uppercase text-center",
+  },
+  orange: {
+    className: "bg-orange hover:scale-105 active:scale-105 active:shadow-xl px-6",
     baseClasses:
       "relative flex items-center justify-center gap-2 min-h-12 rounded-md cursor-pointer " +
       "transition-transform duration-200 text-white font-menu font-bold uppercase text-center",
