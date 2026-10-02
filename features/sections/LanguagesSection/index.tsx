@@ -34,7 +34,7 @@ export default async function LanguagesSection({
   return (
     <section className="w-full my-8 overflow-x-clip lg:my-10">
       <SectionPaddingWrapper>
-        <div className="relative flex flex-col gap-6 p-4 xl:grid xl:grid-cols-[1fr_auto_15rem] xl:gap-8 xl:p-0 xl:pr-8">
+        <div className="relative flex flex-col gap-6 p-4 xl:grid xl:grid-cols-[1fr_auto_15rem] xl:gap-8 xl:p-0 xl:pr-28">
           <div className="pointer-events-none absolute -inset-x-4 -inset-y-8 xl:-inset-x-10 xl:-inset-y-14">
             <Image fill sanityImage={sectionBg} className="object-fill" />
           </div>
@@ -51,7 +51,7 @@ export default async function LanguagesSection({
             <Text14 className="font-bold uppercase tracking-wide text-blue">
               {topText}
             </Text14>
-            <Text32 className="leading-tight">
+            <Text32 className="leading-tight xl:text-[1.8rem]">
               <span className="block">{titleFirstLine}</span>
               <span className="block whitespace-nowrap">{titleSecondLine}</span>
             </Text32>
@@ -80,7 +80,7 @@ export default async function LanguagesSection({
 
           <Image
             sanityImage={rightImg}
-            className="pointer-events-none absolute right-0 top-1/2 hidden h-auto w-24 -translate-y-1/2 translate-x-1/2 xl:block"
+            className="pointer-events-none absolute right-0 top-1/2 hidden h-auto w-24 -translate-y-1/2 xl:block"
           />
         </div>
       </SectionPaddingWrapper>

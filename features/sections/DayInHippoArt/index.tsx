@@ -20,7 +20,7 @@ export default async function DayInHippoArt({
   tileList,
 }: IDayInHippoArt) {
   return (
-    <section className="w-full my-8 lg:my-10">
+    <section className="w-full my-8 lg:my-16">
       <SectionPaddingWrapper>
         <div className="flex flex-col gap-6 font-menu text-navy lg:flex-row lg:items-center lg:gap-8">
           <div className="flex flex-1 flex-col gap-4">
