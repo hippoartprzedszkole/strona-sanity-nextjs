@@ -4,7 +4,10 @@ import getPage from "@/src/api/page/getPage";
 import getAllPageSlugs from "@/src/api/page/getAllPageSlugs";
 import generateMetadataObj from "@/src/utils/generateMetadataObj";
 import { Metadata } from "next";
-import { DEFAULT_SEO_DESCRIPTION } from "@/src/utils/seoDefaults";
+import {
+  DEFAULT_OG_IMAGE,
+  DEFAULT_SEO_DESCRIPTION,
+} from "@/src/utils/seoDefaults";
 
 export const revalidate = false;
 
@@ -39,12 +42,11 @@ export async function generateMetadata({
   return {
     ...generateMetadataObj({
       title: page.title,
-      description:
-        page.seo?.description ?? DEFAULT_SEO_DESCRIPTION,
+      description: page.seo?.description ?? DEFAULT_SEO_DESCRIPTION,
       canonical: canonicalUrl,
       locale: "pl_PL",
       ogTitle: page.seo?.ogTitle,
-      ogImage: page.seo?.ogImage ?? "/assets/logo/logo-vector-2.png",
+      ogImage: page.seo?.ogImage ?? DEFAULT_OG_IMAGE,
     }),
     alternates: {
       canonical: canonicalUrl,

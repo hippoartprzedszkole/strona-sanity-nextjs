@@ -16,7 +16,7 @@ export default function generateMetadataObj(seo: IMetadata): Metadata {
       locale: seo.locale,
       type: "website",
       ...(seo.ogImage && {
-        images: [{ url: seo.ogImage, width: 1200, height: 630 }],
+        images: [{ url: seo.ogImage }],
       }),
     },
     twitter: {

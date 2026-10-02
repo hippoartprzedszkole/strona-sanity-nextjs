@@ -1,6 +1,9 @@
 import "./globals.css";
 import { Metadata } from "next";
-import { DEFAULT_SEO_DESCRIPTION } from "@/src/utils/seoDefaults";
+import {
+  DEFAULT_OG_IMAGE,
+  DEFAULT_SEO_DESCRIPTION,
+} from "@/src/utils/seoDefaults";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_FRONTEND_URL!),
@@ -23,9 +26,11 @@ export const metadata: Metadata = {
     siteName: "Przedszkole HippoArt",
     type: "website",
     locale: "pl_PL",
+    images: [DEFAULT_OG_IMAGE],
   },
   twitter: {
     card: "summary_large_image",
+    images: [DEFAULT_OG_IMAGE],
   },
   robots: {
     index: true,
