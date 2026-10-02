@@ -121,6 +121,12 @@ const getPage = async ({ slug }: { slug: string }): Promise<IPage> => {
         },
         firstBox {
           ...,
+          starsImg {
+            ${imageAssetQuery}
+          },
+          heartImg {
+            ${imageAssetQuery}
+          },
           bottomImg {
             ${imageAssetQuery}
           },
@@ -138,6 +144,9 @@ const getPage = async ({ slug }: { slug: string }): Promise<IPage> => {
           },
           btn {
             ...,
+            icon {
+              ${imageAssetQuery}
+            },
             link-> {
               ${slugWithTitleQuery}
             }
@@ -145,6 +154,9 @@ const getPage = async ({ slug }: { slug: string }): Promise<IPage> => {
         },
         thirdBox {
           ...,
+          plusIcon {
+            ${imageAssetQuery}
+          },
           leftImg {
             ${imageAssetQuery}
           },

@@ -11,6 +11,7 @@ export enum SECTION_NAMES {
   DAY_IN_HIPPOART = "dayInHippoArt",
   FOR_PARENTS_SECTION = "forParentsSection",
   GALLERY_PREVIEW = "galleryPreview",
+  INFO_BOXES = "infoBoxes",
 }
 
 const SECTIONS: Record<
@@ -61,6 +62,11 @@ const SECTIONS: Record<
     name: SECTION_NAMES.GALLERY_PREVIEW,
     title: "Gallery preview",
     component: dynamic(() => import("./GalleryPreview")),
+  },
+  [SECTION_NAMES.INFO_BOXES]: {
+    name: SECTION_NAMES.INFO_BOXES,
+    title: "Info boxes",
+    component: dynamic(() => import("./InfoBoxes")),
   },
 };
 
