@@ -3,7 +3,7 @@
 import { useState } from "react";
 import clsx from "clsx";
 import Image from "@/src/components/Image";
-import { Text12 } from "@/src/components/Text";
+import { Text12, Text14 } from "@/src/components/Text";
 import { ISanityImage } from "@/src/types/common";
 import { IInfoBoxesQuestion } from "./types";
 
@@ -31,7 +31,7 @@ export default function QuestionAccordion({
               onClick={() => setOpenIndex(isOpen ? null : i)}
               className="flex w-full cursor-pointer items-center justify-between gap-3 py-1.5 text-left"
             >
-              <Text12 className="font-bold">{item.question}</Text12>
+              <Text14 className="font-bold">{item.question}</Text14>
               <Image
                 sanityImage={plusIcon}
                 className={clsx(

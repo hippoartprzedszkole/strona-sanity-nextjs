@@ -30,25 +30,25 @@ export default async function HeroSection({
 }: IHeroSection) {
   return (
     <SectionPaddingWrapper className="pt-32 pb-8">
-      <div className="flex flex-col items-center gap-6 text-center lg:text-left lg:grid lg:grid-cols-[5fr_6fr] lg:gap-4">
-        <div className="contents lg:relative lg:z-10 lg:flex lg:flex-col lg:items-start lg:gap-6">
+      <div className="flex flex-col items-center gap-6 text-center xl:text-left xl:grid xl:grid-cols-[5fr_6fr] xl:gap-4">
+        <div className="contents xl:relative xl:z-10 xl:flex xl:flex-col xl:items-start xl:gap-6">
           <Image
             sanityImage={logo}
             priority
-            className="order-1 lg:order-none w-48 lg:w-72 h-auto"
+            className="order-1 xl:order-none w-48 xl:w-72 h-auto"
           />
           <Image
             sanityImage={heartIcon}
-            className="hidden lg:block absolute top-16 left-[55%] w-12 h-auto"
+            className="hidden xl:block absolute top-16 left-[55%] w-12 h-auto"
           />
           <Image
             sanityImage={starIcon}
-            className="hidden lg:block absolute top-12 left-[75%] w-16 h-auto"
+            className="hidden xl:block absolute top-12 left-[75%] w-16 h-auto"
           />
 
-          <Text64 className="order-2 lg:order-none font-menu leading-tight">
+          <Text64 className="order-2 xl:order-none font-menu leading-tight">
             <span className="block text-navy">{titleFirstLine}</span>
-            <span className="block text-[3rem] lg:text-[6rem]">
+            <span className="block text-[3rem] xl:text-[6rem]">
               {titleSecondLine.split("").map((letter, i) => (
                 <span key={i} className={LETTER_COLORS[i % LETTER_COLORS.length]}>
                   {letter}
@@ -57,11 +57,11 @@ export default async function HeroSection({
             </span>
           </Text64>
 
-          <div className="order-4 lg:order-none bg-yellow/70 -rotate-1 rounded-lg px-6 py-4 max-w-md">
+          <div className="order-4 xl:order-none bg-yellow/70 -rotate-1 rounded-lg px-6 py-4 max-w-md">
             <Text16 className="font-menu text-text-dark">{yellowBoxText}</Text16>
           </div>
 
-          <div className="order-5 lg:order-none flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+          <div className="order-5 xl:order-none flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <ButtonLink
               variant="pink"
               href={`tel:${pinkBtn.tel}`}
@@ -80,13 +80,13 @@ export default async function HeroSection({
           </div>
         </div>
 
-        <div className="relative order-3 lg:order-none w-full mb-12 lg:mb-0 lg:w-[120%] lg:-ml-[20%]">
+        <div className="relative order-3 xl:order-none w-full mb-12 xl:mb-0 xl:w-[120%] xl:-ml-[20%]">
           <Image sanityImage={mainImg} priority className="w-full h-auto" />
           <Image
             sanityImage={hippoImg}
-            className="absolute bottom-0 left-0 lg:left-[4%] lg:-bottom-8 translate-y-[50px] w-24 sm:w-32 lg:w-48 h-auto"
+            className="absolute bottom-0 left-0 xl:left-[4%] xl:-bottom-8 translate-y-[50px] w-24 sm:w-32 xl:w-48 h-auto"
           />
-          <div className="absolute bottom-0 right-0 lg:-right-4 lg:-bottom-8 translate-y-[50px] w-2/5 lg:w-1/3">
+          <div className="absolute bottom-0 right-0 xl:-right-4 xl:-bottom-8 translate-y-[50px] w-2/5 xl:w-1/3">
             <Image sanityImage={blueBoxImg} className="w-full h-auto" />
           </div>
         </div>
