@@ -1,11 +1,7 @@
 import { MODELS } from "@/src/types/schemas";
 import { sanityClient } from "@/sanity/lib/client";
 import { IPage } from "@/src/types/page";
-import {
-  assetQuery,
-  imageAssetQuery,
-  slugWithTitleQuery,
-} from "@/src/api/sanityQueries";
+import { imageAssetQuery, slugWithTitleQuery } from "@/src/api/sanityQueries";
 
 const getPage = async ({ slug }: { slug: string }): Promise<IPage> => {
   const page = await sanityClient.fetch(
