@@ -9,7 +9,7 @@ import {
   DEFAULT_SEO_DESCRIPTION,
 } from "@/src/utils/seoDefaults";
 
-export const revalidate = false;
+export const revalidate = 30;
 
 export async function generateStaticParams() {
   const pages = await getAllPageSlugs();
