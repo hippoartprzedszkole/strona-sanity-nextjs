@@ -18,7 +18,7 @@ export default function DesktopMenu() {
           {page.title}
           <Image
             sanityImage={menuItemHoverImg}
-            className="pointer-events-none absolute -left-1/4 -bottom-[12px] h-auto w-[150%] max-w-none transition-[clip-path] duration-300 ease-out [clip-path:inset(0_100%_0_0)] group-hover:[clip-path:inset(0_0_0_0)]"
+            className="pointer-events-none absolute left-1/2 -translate-x-1/2 -bottom-[12px] h-auto w-[150%] max-w-[125px] transition-[clip-path] duration-300 ease-out [clip-path:inset(0_100%_0_0)] group-hover:[clip-path:inset(0_0_0_0)]"
           />
         </InternalLink>
       ))}

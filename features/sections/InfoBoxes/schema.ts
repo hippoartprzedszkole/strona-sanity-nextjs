@@ -48,6 +48,7 @@ export default defineType({
           type: "array",
           of: [
             {
+              name: "questionItem",
               type: "object",
               fields: [
                 { name: "question", type: "string" },

@@ -17,6 +17,7 @@ export default defineType({
       validation: (Rule) => Rule.max(6),
       of: [
         {
+          name: "iconItem",
           type: "object",
           fields: [
             { name: "icon", type: PARTIALS.IMG },

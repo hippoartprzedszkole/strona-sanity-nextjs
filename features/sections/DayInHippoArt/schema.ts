@@ -16,6 +16,7 @@ export default defineType({
       validation: (Rule) => Rule.max(6),
       of: [
         {
+          name: "dayTile",
           type: "object",
           fields: [
             { name: "hourText", type: "string" },
